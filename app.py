@@ -47,7 +47,7 @@ if uploaded_file is not None:
         lot_exp_carat = []
 
         # Split the section into parts based on the pattern
-        pattern = r"\s*(out of bound|\+.*?)\s+[A-Za-z]\.\d+\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+"
+        pattern = r"\s*(out of bound|\+.*?)\s+(KS\.)?[A-Za-z]\.\d+\s+(\d+\.\d+)\s+(\d+\.\d+)\s+(\d+\.\d+)\s+"
         parts = re.findall(pattern, section)
 
         for part in parts:
